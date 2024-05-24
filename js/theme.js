@@ -112,10 +112,10 @@ export const theme = (() => {
 
     const check = () => {
         if (!theme.has('active')) {
-            theme.set('active', THEME_LIGHT);
+            theme.set('active', THEME_DARK);
 
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                theme.set('active', THEME_DARK);
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                theme.set('active', THEME_LIGHT);
             }
         }
 
@@ -130,7 +130,7 @@ export const theme = (() => {
             onLight();
             document.documentElement.setAttribute(THEME_BS_DATA, THEME_LIGHT);
             theme.set('active', THEME_LIGHT);
-            const toggle = document.getElementById('darkMode');
+            const toggle = document.getElementById('lightMode');
             if (toggle) {
                 toggle.checked = false;
             }

@@ -79,6 +79,23 @@ export const util = (() => {
         window.scrollTo(0, 0);
     };
 
+    const tamu = () => {
+        const name = (new URLSearchParams(window.location.search)).get('to');
+        const tamu = document.getElementById('tamu-name');
+
+        if (!name) {
+            tamu.remove();
+            return;
+        }
+
+        const div = document.createElement('div');
+        div.classList.add('m-2');
+        div.innerHTML = `<p class="mt-0 mb-1 mx-0 p-0 text-light">${tamu.getAttribute('data-message')}</p><h2 class="text-light">${escapeHtml(name)}</h2>`;
+
+        document.getElementById('form-name').value = name;
+        tamu.appendChild(div);
+    };
+
     const modal = (img) => {
         document.getElementById('show-modal-image').src = img.src;
         (new bootstrap.Modal('#modal-image')).show();

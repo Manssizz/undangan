@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Raleway|Rouge+Script|Norican");
+
 html {
+    font-family: 'Lato', Tahoma, sans-serif;
     scroll-behavior: smooth !important;
     scrollbar-width: none !important;
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif !important;
+    /* font-family: 'Josefin Sans', sans-serif !important; */
+    font-family: 'Lato', sans-serif !important;
     padding: 0 !important;
 }
 
@@ -129,6 +133,16 @@ footer {
 
 .bg-theme-light {
     background-color: var(--bs-gray-100);
+    /* background-color: #F4E2E2; */
+    /* background-color: #EDD2D1; */
+    /* background-color: #ee9090; */
+}
+
+.bg-theme-pink {
+    /* background-color: var(--bs-gray-100); */
+    background-color: #F4E2E2;
+    /* background-color: #EDD2D1; */
+    /* background-color: #ee9090; */
 }
 
 .bg-theme-dark {
@@ -137,6 +151,12 @@ footer {
 
 .color-theme-white {
     color: white;
+    /* color: #F4E2E2; */
+}
+
+.color-theme-pink {
+    color: #F4E2E2;
+    /* color: white; */
 }
 
 .color-theme-black {

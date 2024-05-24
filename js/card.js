@@ -37,7 +37,8 @@ export const card = (() => {
 
     const convertMarkdownToHTML = (input) => {
         lists.forEach((v, k) => {
-            const regex = new RegExp(`\\${k}(?=\\S)(.*?)(?<!\\s)\\${k}`, 'gs');
+            // const regex = new RegExp(`\\${k}(?=\\S)(.*?)(?<!\\s)\\${k}`, 'gs');
+            const regex = new RegExp(`\\${k}/(?:\/)([^#]+)(?=#|$)/${k}`, 'gs');
             input = input.replace(regex, v);
         });
 

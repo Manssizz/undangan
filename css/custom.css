@@ -1,0 +1,43 @@
+@font-face {
+    font-family: vaileryFont;
+    src:url("../assets/fonts/vailery.ttf");
+    font-weight: 700;
+    transform: rotate(-2deg);
+    font-size: 5rem;
+    padding-bottom: 5px;
+    color: whitesmoke;
+    }
+
+/* @font-face {
+    font-family: italianoFont;
+    src:url("../assets/fonts/");
+    font-weight: 700;
+    transform: rotate(-2deg);
+    font-size: 5rem;
+    padding-bottom: 5px;
+    color: whitesmoke;
+} */
+
+@font-face {
+    font-family: helloFont;
+    src:url("../assets/fonts/hello.otf");
+    font-weight: 700;
+    transform: rotate(-2deg);
+    font-size: 5rem;
+    padding-bottom: 5px;
+    color: whitesmoke;
+}
+
+.font-vailery{
+    font-family: 'vaileryFont', cursive !important;
+}
+/* .font-esthetic {
+    font-family: 'vaileryFont', cursive !important;
+} */
+
+/* .italiano-font{
+    font-family: 'italianoFont', cursive !important;
+} */
+.font-hello{
+    font-family: 'helloFont', cursive !important;
+}
